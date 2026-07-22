@@ -1,3 +1,4 @@
+import math
 n = int(input("Nhâp số nguyên n : "))
 tg = n
 dem = 0
@@ -11,21 +12,20 @@ else:
         dem +=1
         tg = tg//10
 while tg > 0:
-    tong += tg % 10
-    tg = tg // 10    
-if n < 2:
-    nguyento = False
+    tong += tg%10
+    tg =tg//10    
+if n<2:
+    songuyento = False
 else:
-    nguyento = True
-    for i in range(2, int(math.sqrt(n)) + 1):
-        if n % i == 0:
-            nguyento = False
+    songuyento = True
+    for i in range(2,int(math.sqrt(n))+1):
+        if n%i==0:
+            songuyento=False
             break   
-print("Số chữ số:", dem)
-print("Tổng các chữ số:", tong)
-
-if nguyento:
-    print(n, "là số nguyên tố")
+print(f"Số chữ số :",dem)
+print(f"Tổng các chữ số :",tong)
+if songuyento:
+    print(n,"là số nguyên tố")
 else:
-    print(n, "không phải là số nguyên tố")
+    print(n,"Không phải là số nguyên tố")
         
