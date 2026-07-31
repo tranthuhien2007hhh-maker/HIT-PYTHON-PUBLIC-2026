@@ -1,0 +1,123 @@
+# a = [x for x in range(10)]
+# a.append('10')
+# print(a)
+
+# b=[i for i in range(31) if(i%3==0)]
+# print(b)
+
+# b.extend([40,50,60])
+# print(b)
+
+# d=[1,2,3]
+# c= d.copy()
+# c.insert(len(c),4)
+# print(c)
+
+# list3 = [0,1,2,3,4]
+# list3[0] = 3
+# print(list3)
+# list3[-1] = "Rắn"
+# print(list3)
+
+# my_list = [x for x in range(10,101,10)]
+
+# print(my_list[:])
+
+# print(1)
+# print(my_list[2:6])
+
+# print(2)
+# print(my_list[:5])
+
+# print(3)
+# print(my_list[5:])
+
+# print(4)
+# print(my_list[::2])
+
+# print(5)
+# print(my_list[::-1])
+
+# print(6)
+# print(my_list[1::2])
+
+# print(7)
+# my_list[2:5] = [1, 2, 5]
+# print(my_list)
+
+# fruits = ["Táo", "Cam", "Chuối", "Cam", "Xoài", "Nho"]
+
+# print(fruits.count("Cam"))
+
+# print(fruits.index("Chuối"))
+# fruits.pop(len(fruits)-1)
+# print(fruits.pop(len(fruits)-1))
+# fruits.remove("Cam")
+# print(fruits)
+# fruits.reverse()
+# print(fruits)
+# fruits.sort()
+# print(fruits)
+# fruits.clear()
+# print(fruits)
+# s1 = "2007"
+# s2 = 2007
+# print(s1, type(s1))
+# s = 'HIT'
+# for i in s:
+#     print(i, end = ' ')
+# print()
+# for i in range(len(s)):
+#     print(s[i], end = ' ')
+# s = 'Xin chao'
+# print(s[1])
+# print(s[-2])
+# s = 'toi la thanh vien cua CLB HIT'
+# s1 = s[22:]
+# print(s1)
+
+# student = {
+#     "name": "Nguyen Van A",
+#     "age": 19,
+#     "gpa": 8.5
+# }
+# student = {
+#     "name": "Nguyen Van A",
+#     "age": 19,
+#     "gpa": 8.5
+# }
+# student.get("name")
+
+# # Sử dụng phương thức update()
+# student2 = {
+#     "name": "Lê Văn C",
+#     "age": 20,
+#     "gpa": 8.5
+# }
+
+# student.update({"name": "Nguyễn Hà My", "gpa": 9.0})
+# print(student)
+# student["yob"] = 2007 # Keyword mới
+# print(student)
+     
+student = {
+    "name": "Nguyen Van A",
+    "age": 19,
+    "gpa": 8.5
+}
+
+# In các khóa có trong từ điển
+for x in student:
+    print(x)
+
+# Duyệt các giá trị
+for x in student.values():
+    print(x)
+
+# Duyệt các khóa
+for x in student.keys():
+    print(x)
+
+# Duyệt các cặp khóa - giá trị
+for x, y in student.items():
+    print(x, y)
